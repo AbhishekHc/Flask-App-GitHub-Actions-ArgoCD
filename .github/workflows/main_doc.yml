@@ -68,9 +68,9 @@ jobs:
       # Update Github
       - name: Commit the changes
         run: |
-          git config --global user.email "<>"
+          git config --global user.email "abishek18hc@gmail.com"
           git config --global user.name "GitHub Actions Bot"
           git add deploy/deploy.yaml
           git commit -m "Update deploy.yaml with new image version - ${{ env.VERSION }}"
-          git remote set-url origin https://github-actions:${{ secrets.GITHUB_TOKEN }}@github.com:AbhishekHc/Flask-App-GitHub-Actions-ArgoCD.git
+          git remote set-url origin https://github-actions:${{ secrets.GITHUB_TOKEN }}@://github.com:AbhishekHc/Flask-App-GitHub-Actions-ArgoCD.git
           git push origin doc
