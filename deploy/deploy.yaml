@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: demo-app
-        image: abhishekhc/demo-app:v20250105121337
+        image: abhishekhc/demo-app:v20260719074858
         ports:
         - containerPort: 5000
